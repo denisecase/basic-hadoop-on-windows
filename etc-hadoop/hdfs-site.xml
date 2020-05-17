@@ -23,10 +23,10 @@
   </property>
   <property>
       <name>dfs.namenode.name.dir</name>
-      <value>file:///C:/hadoop-3.2.1/nodes/namenode</value>
+      <value>/hadoop-3.2.1/nodes/namenode</value>
   </property>
   <property>
       <name>dfs.datanode.data.dir</name>
-      <value>/C:/hadoop-3.2.1/nodes/datanode</value>
+      <value>/hadoop-3.2.1/nodes/datanode</value>
   </property>
 </configuration> 
