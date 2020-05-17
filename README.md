@@ -112,7 +112,7 @@ Start the namenode first. From your desktop, run PowerShell as Administrator and
 hdfs namenode
 ```
 
-Then, start the datanode. From your desktop, run PowerShell as Administrator and start the datanode service. Leave the window open to keep the process running.
+Then, start the datanode. Important: Make sure the datanode folder does NOT exist. If it does exist, stop the process if necessary and delete the directory. Once gone, from your desktop, run PowerShell as Administrator and start the datanode service. Leave the window open to keep the process running.
 
 ```PowerShell
 hdfs datanode
