@@ -96,6 +96,10 @@ We need to format a new namenode. In PowerShell as Adminstrator, run:
 hdfs namenode –format
 ```
 
+It will ask: "Re-format filesystem in Storage Directory root= C:\hadoop-3.2.1\nodes\namenode; location= null ? (Y or N)"
+
+Type Y and hit ENTER to continue. 
+
 Verify it formats without errors. The process will shutdown the namenode after formatting.
 
 ---
