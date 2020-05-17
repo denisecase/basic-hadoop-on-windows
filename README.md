@@ -50,7 +50,9 @@ This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, an
 ## Hadoop 2 - Add winutils
 
 - Go to <https://github.com/steveloughran/winutils>
-- Download winutils.exe from <https://github.com/steveloughran/winutils/blob/master/hadoop-3.0.0/bin/winutils.exe> to C:\hadoop-3.1.3\bin.
+- Or <https://github.com/cdarlint/winutils> (for newer versions)
+- Download the correct version of winutils.exe to C:\hadoop-3.2.1\bin.
+- Download the correct version of hadoop.dll to C:\hadoop-3.2.1\bin.
 
 ## Hadoop 3 - Create Node Directories
 
@@ -94,6 +96,10 @@ We need to format a new namenode. In PowerShell as Adminstrator, run:
 hdfs namenode –format
 ```
 
+It will ask: "Re-format filesystem in Storage Directory root= C:\hadoop-3.2.1\nodes\namenode; location= null ? (Y or N)"
+
+Type Y and hit ENTER to continue. 
+
 Verify it formats without errors. The process will shutdown the namenode after formatting.
 
 ---
@@ -106,7 +112,7 @@ Start the namenode first. From your desktop, run PowerShell as Administrator and
 hdfs namenode
 ```
 
-Then, start the datanode. From your desktop, run PowerShell as Administrator and start the datanode service. Leave the window open to keep the process running.
+Then, start the datanode. Important: Make sure the datanode folder does NOT exist. If it does exist, stop the process if necessary and delete the directory. Once gone, from your desktop, run PowerShell as Administrator and start the datanode service. Leave the window open to keep the process running.
 
 ```PowerShell
 hdfs datanode
