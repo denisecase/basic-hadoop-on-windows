@@ -59,6 +59,11 @@ This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, an
 - Create C:\hadoop-3.2.1\nodes
 - Create C:\hadoop-3.2.1\nodes\namenode
 
+## Hadoop 4 - Update jar
+
+- Rename your C:\hadoop-3.2.1\share\hadoop\hdfs\hadoop-hdfs-3.2.1.jar to hadoop-hdfs-3.2.1.jar.bk (5820 KB)
+- Save the share-hadoop-hdfs\hadoop-hdfs-3.2.1.jar in this repo (5780 KB) to your C:\hadoop-3.2.1\share\hadoop\hdfs\ folder.
+
 ---
 
 ## Windows 1 - Configure System Environment Variables
