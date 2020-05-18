@@ -62,9 +62,9 @@ This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, an
 ## Hadoop 4 - Update jar
 
 - Rename your C:\hadoop-3.2.1\share\hadoop\hdfs\hadoop-hdfs-3.2.1.jar to hadoop-hdfs-3.2.1.bk (5820 KB)
-- Save the share-hadoop-hdfs\hadoop-hdfs-3.2.1.jar in this repo (5780 KB) to your C:\hadoop-3.2.1\share\hadoop\hdfs\ folder.
+- Save the [share-hadoop-hdfs/hadoop-hdfs-3.2.1.jar](./share-hadoop-hdfs/hadoop-hdfs-3.2.1.jar) in this repo (5780 KB) to your C:\hadoop-3.2.1\share\hadoop\hdfs\ folder.
 - Read more at <https://kontext.tech/column/hadoop/379/fix-for-hadoop-321-namenode-format-issue-on-windows-10>
-- Working jar from <2.	https://github.com/FahaoTang/big-data/blob/master/hadoop-hdfs-3.2.1.jar>
+- Source: [https://github.com/FahaoTang/big-data/blob/master/hadoop-hdfs-3.2.1.jar](https://github.com/FahaoTang/big-data/blob/master/hadoop-hdfs-3.2.1.jar)
 
 ---
 
