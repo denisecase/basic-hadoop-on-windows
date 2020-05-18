@@ -54,12 +54,7 @@ This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, an
 - Download the correct version of winutils.exe to C:\hadoop-3.2.1\bin.
 - Download the correct version of hadoop.dll to C:\hadoop-3.2.1\bin.
 
-## Hadoop 3 - Create Node Directories
-
-- Create C:\hadoop-3.2.1\nodes
-- Create C:\hadoop-3.2.1\nodes\namenode
-
-## Hadoop 4 - Update jar
+## Hadoop 3 - Update jar
 
 - Rename your C:\hadoop-3.2.1\share\hadoop\hdfs\hadoop-hdfs-3.2.1.jar to hadoop-hdfs-3.2.1.bk (5820 KB)
 - Save the [share-hadoop-hdfs/hadoop-hdfs-3.2.1.jar](./share-hadoop-hdfs/hadoop-hdfs-3.2.1.jar) in this repo (5780 KB) to your C:\hadoop-3.2.1\share\hadoop\hdfs\ folder.
@@ -97,17 +92,15 @@ Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in [./et
 
 ## Windows 3 - Format new namenode
 
-We need to format a new namenode. In PowerShell as Adminstrator, run:
+Create and format a new namenode (at the path specified in hdfs-site.xml). In PowerShell as Adminstrator, run:
 
 ```PowerShell
 hdfs namenode –format
 ```
 
-It will ask: "Re-format filesystem in Storage Directory root= C:\hadoop-3.2.1\nodes\namenode; location= null ? (Y or N)"
+Verify it runs without errors. The process will shutdown the new namenode after formatting. 
 
-Type Y and hit ENTER to continue. 
-
-Verify it formats without errors. The process will shutdown the namenode after formatting.
+Explore the new folder created at C:\hadoop-3.2.1\nodes\namenode (or the path given in hdfs-site.xml).
 
 ---
 
