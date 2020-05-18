@@ -87,7 +87,7 @@ Caution: You may get errors if you have multiple Java options in your path. I de
 
 ## Windows 2 - Edit Hadoop Files
 
-Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in <./etc-hadoop>:
+Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in [./etc-hadoop](./etc-hadoop).
 
 - core-site.xml
 - hadoop-env.cmd (set JAVA_HOME=C:\OpenJDK\jdk-14.0.1)
