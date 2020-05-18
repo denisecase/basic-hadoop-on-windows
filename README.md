@@ -49,8 +49,8 @@ This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, an
 
 ## Hadoop 2 - Add winutils
 
-- Go to <https://github.com/steveloughran/winutils>
-- Or <https://github.com/cdarlint/winutils> (for newer versions)
+- Go to [https://github.com/cdarlint/winutils](https://github.com/cdarlint/winutils).
+- Find the your version of Hadoop. 
 - Download the correct version of winutils.exe to C:\hadoop-3.2.1\bin.
 - Download the correct version of hadoop.dll to C:\hadoop-3.2.1\bin.
 
