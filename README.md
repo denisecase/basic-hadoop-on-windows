@@ -158,7 +158,7 @@ hadoop fs -help
 
 ## Start up YARN
 
-Open PowerShell as an Administrator in sbin and run: 
+Open PowerShell as an Administrator in sbin and run (no spaces): 
 
 ```PowerShell
 .\start-yarn.cmd
