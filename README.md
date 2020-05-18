@@ -105,7 +105,7 @@ Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in [./et
 Create and format a new namenode (at the path specified in hdfs-site.xml). In PowerShell as Adminstrator, run:
 
 ```PowerShell
-hdfs namenode –format
+hdfs namenode -format
 ```
 
 Verify it runs without errors. The process will shutdown the new namenode after formatting. 
