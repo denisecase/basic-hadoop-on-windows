@@ -13,6 +13,7 @@
 - OpenJDK (install or upgrade to latest using Chocolatey)
 - Apache Maven, Java build tool (install or upgrade)
 - VS Code for editing configuration files (install or upgrade)
+- Recommended: Do not use choco install hadoop - follow the instructions below instead.
 
 ```PowerShell
 choco install openjdk -y
