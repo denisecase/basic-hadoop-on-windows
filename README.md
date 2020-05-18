@@ -159,7 +159,9 @@ hadoop fs -help
 
 ## Start up YARN
 
-Open PowerShell as an Administrator in sbin and run (no spaces): 
+Start your namenode and datanode services as shown above.
+
+Open PowerShell as an Administrator in C:\hadoop-3.2.1\sbin and run (no spaces): 
 
 ```PowerShell
 .\start-yarn.cmd
