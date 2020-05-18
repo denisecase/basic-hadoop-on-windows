@@ -22,8 +22,8 @@
 @rem remote nodes.
 
 @rem The java implementation to use.  Required.
-@rem DMC - Code requires no spaces, so copy OpenJDK here
-set JAVA_HOME=C:\OpenJDK\jdk-14.0.1
+@rem DMC - Code requires no spaces and Yarn requires JDK8 so we need a special path here
+set JAVA_HOME=C:\openjdk-8u252-b09
 
 @rem The jsvc implementation to use. Jsvc is required to run secure datanodes.
 @rem set JSVC_HOME=%JSVC_HOME%
