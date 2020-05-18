@@ -23,15 +23,24 @@ choco list -local
 
 ---
 
-## Copy OpenJDK to C:\ for Hadoop
+## Hadoop Needs Java with No Spaces (and Yarn needs JDK 8)
 
 Choco installs OpenJDK to C:\Program Files\OpenJDK\jdk-14.0.1.
 
 - This works fine for most programs, but not Hadoop. 
 - Hadoop cannot have spaces in the path. 
-- My solution is to COPY the most recent OpenJDK to C:\
-- Windows Environment Variables still use the original Chocolatey path. (Windows 1 below.)
-- Hadoop will use JAVA_HOME=C:\OpenJDK\jdk-14.0.1 (See hadoop-env.cmd in Windows 2 below.)
+- Yarn cannot have a version greater than 8.
+- Keep Windows Environment Variables at the original Chocolatey path. (Windows 1 below.)
+- Use a special "no spaces in the path" JDK 8 version for Hadoop (set in hadoop-env.cmd in Windows 2 below.)
+
+An easy way to get this version:
+
+- Go to [https://adoptopenjdk.net/upstream.html](https://adoptopenjdk.net/upstream.html)
+- Download OpenJDK 8 (LTS) for Windows x64 JDK 103 MB as a zip file to C:\.
+- Right-click / Extract all / Extract. 
+- Move the openjdk-8u252-b09 folder from C:\OpenJDK8U-jdk_x64_windows_8u252b09 to C:\.
+
+Now we have JDK 8 with no spaces available for Hadoop. 
 
 ---
 
@@ -86,8 +95,8 @@ Caution: You may get errors if you have multiple Java options in your path. I de
 Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in [./etc-hadoop](./etc-hadoop).
 
 - core-site.xml
-- hadoop-env.cmd (set JAVA_HOME=C:\OpenJDK\jdk-14.0.1)
-- hdfs-site.xml (values must be formatted as shown)
+- hadoop-env.cmd (set JAVA_HOME=C:\openjdk-8u252-b09 - no spaces, must be version 8)
+- hdfs-site.xml (path values must be formatted as shown in the example)
 - mapred-site.xml
 - yarn-site.xml
 
