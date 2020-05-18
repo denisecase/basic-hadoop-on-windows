@@ -69,7 +69,7 @@ Edit the system environment variables. All paths must reflect the installation l
 
 - Open with Windows key + "Edit the system environment variables" / Environment variables / System variables (bottom half of the window).
 - Set HADOOP_HOME to C:\hadoop-3.2.1
-- Verify JAVA_HOME is C:\Program Files\OpenJDK\jdk-14.0.1
+- Verify JAVA_HOME is C:\Program Files\OpenJDK\jdk-14.0.1 OR C:\Program Files\Java\jdk1.8.0_211 (or similar if you want JDK 8)
 - Verify M2_HOME C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3
 
 Edit Path - use Edit or New entry to add these locations to your path. Note the \bin at the end. Spelling and capitalization are critical.
