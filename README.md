@@ -156,6 +156,18 @@ hadoop fs -ls /wordcount
 hadoop fs -help
 ```
 
+## Start up YARN
+
+Open PowerShell as an Administrator in sbin and run: 
+
+```PowerShell
+.\start-yarn.cmd
+```
+
+This will start the Resource Manager and Node Manager services.
+
+Open a browser to <http://localhost:8088/cluster/nodes> to see your managed cluster. 
+
 ## References
 
 - [Romeo and Juliet](http://shakespeare.mit.edu/romeo_juliet/full.html)
