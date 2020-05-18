@@ -73,7 +73,7 @@ This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, an
 Edit the system environment variables. All paths must reflect the installation location on your machine. These paths reflect the locations on my machine.
 
 - Open with Windows key + "Edit the system environment variables" / Environment variables / System variables (bottom half of the window).
-- Set HADOOP_HOME to C:\hadoop-3.2.1\bin
+- Set HADOOP_HOME to C:\hadoop-3.2.1
 - Verify JAVA_HOME is C:\Program Files\OpenJDK\jdk-14.0.1
 - Verify M2_HOME C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3
 
