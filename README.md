@@ -27,10 +27,11 @@ choco list -local
 
 Choco installs OpenJDK to C:\Program Files\OpenJDK\jdk-14.0.1.
 
-- This works fine for most programs, but not Hadoop.
+- This works fine for most programs, but not Hadoop. 
+- Hadoop cannot have spaces in the path. 
 - My solution is to COPY the most recent OpenJDK to C:\
-- Windows Environment Variables still use the Chocolatey path. (Windows 1 below.)
-- Hadoop will use JAVA_HOME=C:\OpenJDK\jdk-14.0.1 (Windows 2 below.)
+- Windows Environment Variables still use the original Chocolatey path. (Windows 1 below.)
+- Hadoop will use JAVA_HOME=C:\OpenJDK\jdk-14.0.1 (See hadoop-env.cmd in Windows 2 below.)
 
 ---
 
@@ -74,7 +75,7 @@ Edit the system environment variables. All paths must reflect the installation l
 
 Edit Path - use Edit or New entry to add these locations to your path. Note the \bin at the end. Spelling and capitalization are critical.
 
-- Verify: %JAVA_HOME%\bin
+- Verify: C:\Program Files\OpenJDK\jdk-14.0.1\bin OR %JAVA_HOME%\bin (cannot have both)
 - Verify: %M2_HOME%\bin
 - New: %HADOOP_HOME%\bin
 
