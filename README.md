@@ -171,6 +171,15 @@ This will start the Resource Manager and Node Manager services.
 
 Open a browser to <http://localhost:8088/cluster/nodes> to see your managed cluster. 
 
+## Troubleshooting
+
+Issues?  Key things to check for include the following.
+
+Windows Environment Variables
+
+1. Verify you only have one java bin directory in your path.
+2. Verify the paths provided match the locations on your machine (use File Explorer to check). 
+
 ## References
 
 - [Romeo and Juliet](http://shakespeare.mit.edu/romeo_juliet/full.html)
