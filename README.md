@@ -98,7 +98,7 @@ Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in [./et
 - hadoop-env.cmd (set JAVA_HOME=C:\openjdk-8u252-b09 - no spaces, must be version 8)
 - hdfs-site.xml (path values must be formatted as shown in the example)
 - mapred-site.xml
-- worker
+- workers
 - yarn-site.xml
 
 ## Windows 3 - Format new namenode
