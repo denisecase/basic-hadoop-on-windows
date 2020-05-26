@@ -58,12 +58,11 @@ tar xzvf hadoop-3.2.1.tar.gz
 
 This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, and more.
 
-## Hadoop 2 - Add winutils
+## Hadoop 2 - Add winutil files
 
 - Go to [https://github.com/cdarlint/winutils](https://github.com/cdarlint/winutils).
-- Find the your version of Hadoop. 
-- Download the correct version of winutils.exe to C:\hadoop-3.2.1\bin.
-- Download the correct version of hadoop.dll to C:\hadoop-3.2.1\bin.
+- Find the version that matches your Hadoop (e.g. [hadoop-3.2.1/bin](https://github.com/cdarlint/winutils/tree/master/hadoop-3.2.1/bin))
+- Download each file to your C:\hadoop-3.2.1\bin folder, overwriting when necessary.
 
 ## Hadoop 3 - Update jar
 
@@ -85,7 +84,7 @@ Edit the system environment variables. All paths must reflect the installation l
 
 Edit Path - use Edit or New entry to add these locations to your path. Note the \bin at the end. Spelling and capitalization are critical.
 
-- Verify: C:\Program Files\OpenJDK\jdk-14.0.1\bin OR %JAVA_HOME%\bin (cannot have both)
+- Verify: C:\Program Files\OpenJDK\jdk-14.0.1\bin OR %JAVA_HOME%\bin (don't use both)
 - Verify: %M2_HOME%\bin
 - New: %HADOOP_HOME%\bin
 
@@ -99,6 +98,7 @@ Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in [./et
 - hadoop-env.cmd (set JAVA_HOME=C:\openjdk-8u252-b09 - no spaces, must be version 8)
 - hdfs-site.xml (path values must be formatted as shown in the example)
 - mapred-site.xml
+- worker
 - yarn-site.xml
 
 ## Windows 3 - Format new namenode
