@@ -161,13 +161,13 @@ hadoop fs -help
 
 Start your namenode and datanode services as shown above.
 
-Open PowerShell as an Administrator in C:\hadoop-3.2.1\sbin and run (no spaces): 
+Open PowerShell as an Administrator and run: 
 
 ```PowerShell
-.\start-yarn.cmd
+c:\hadoop-3.2.1\sbin\start-yarn.cmd
 ```
 
-This will start the Resource Manager and Node Manager services.
+This will start the YARN Resource Manager and the YARN Node Manager services.
 
 Open a browser to <http://localhost:8088/cluster/nodes> to see your managed cluster. 
 
