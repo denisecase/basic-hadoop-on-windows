@@ -21,4 +21,8 @@
        <name>mapreduce.framework.name</name>
        <value>yarn</value>
    </property>
+   <property>
+      <name>hadoop.home.dir</name>
+      <value>file:///C:/hadoop-3.2.1</value>
+  </property>
 </configuration>
