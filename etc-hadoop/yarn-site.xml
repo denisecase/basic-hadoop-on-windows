@@ -20,6 +20,6 @@
   </property>
   <property>
        <name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name>  
- <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+       <value>org.apache.hadoop.mapred.ShuffleHandler</value>
   </property>
 </configuration>
