@@ -69,6 +69,14 @@ This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, an
 
 :confused: If PowerShell does not have the tar command yet, use Git Bash or 7-zip to uncompress. 
 
+Result
+
+- Now we have Hadooop software downloaded and extracted
+
+Verify
+
+- [Hadoop](images/HadoopFiles.JPG)
+
 ## Hadoop 2 - Add winutil files
 
 - Go to [https://github.com/cdarlint/winutils](https://github.com/cdarlint/winutils).
