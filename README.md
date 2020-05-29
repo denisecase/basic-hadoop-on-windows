@@ -107,7 +107,7 @@ Edit Path - use Edit or New entry to add these locations to your path. Note the 
 - Verify: %M2_HOME%\bin
 - New: %HADOOP_HOME%\bin
 
-Caution: You may get errors if you have multiple Java options in your path. I delete Oracle JDK and use only the most current OpenJDK.
+:confused:  A Path with multiple Java options can cause errors. I delete Oracle JDK and keep only the latest OpenJDK.
 
 ## Windows 2 - Edit Hadoop Files
 
