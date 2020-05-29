@@ -13,12 +13,14 @@
 - OpenJDK (install or upgrade to latest using Chocolatey)
 - Apache Maven, Java build tool (install or upgrade)
 - VS Code for editing configuration files (install or upgrade)
+- Recommended: 7-zip for decompressing large files
 - Recommended: Do not use choco install hadoop - follow the instructions below instead.
 
 ```PowerShell
 choco install openjdk -y
 choco install maven -y
 choco install vscode -y
+choco install 7zip -y
 choco list -local
 ```
 
@@ -38,6 +40,7 @@ An easy way to get this version:
 
 - Go to [https://adoptopenjdk.net/upstream.html](https://adoptopenjdk.net/upstream.html)
 - Download OpenJDK 8 (LTS) for Windows x64 JDK 103 MB as a zip file to C:\.
+- If not permitted to download to C:\, download to your "Downloads" folder and move to C:\ when done. 
 - Right-click / Extract all / Extract. 
 - Move the openjdk-8u252-b09 folder from C:\OpenJDK8U-jdk_x64_windows_8u252b09 to C:\.
 
@@ -57,6 +60,8 @@ tar xzvf hadoop-3.2.1.tar.gz
 ```
 
 This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, and more.
+
+:confused: If PowerShell does not have the tar command yet, use Git Bash or 7-zip to uncompress. 
 
 ## Hadoop 2 - Add winutil files
 
