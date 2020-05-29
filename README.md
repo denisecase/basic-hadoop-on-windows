@@ -75,7 +75,7 @@ Result
 
 Verify
 
-- [Hadoop](images/HadoopFiles.JPG)
+![Hadoop](images/HadoopFiles.JPG)
 
 ## Hadoop 2 - Add winutil files
 
