@@ -13,8 +13,8 @@
 - OpenJDK (install or upgrade to latest using Chocolatey)
 - Apache Maven, Java build tool (install or upgrade)
 - VS Code for editing configuration files (install or upgrade)
-- Recommended: 7-zip for decompressing large files
-- Recommended: Do not use choco install hadoop - follow the instructions below instead.
+- Optional: 7-zip for decompressing large files
+- Recommended: Do NOT use choco to install Hadoop - follow the instructions below instead.
 
 ```PowerShell
 choco install openjdk -y
@@ -44,7 +44,13 @@ An easy way to get this version:
 - Right-click / Extract all / Extract. 
 - Move the openjdk-8u252-b09 folder from C:\OpenJDK8U-jdk_x64_windows_8u252b09 to C:\.
 
-Now we have JDK 8 with no spaces available for Hadoop. 
+Result 
+
+- Now we have JDK 8 with no spaces available for Hadoop. 
+
+Verify
+
+![HadoopJDK](images/HadoopJDK.PNG)
 
 ---
 
