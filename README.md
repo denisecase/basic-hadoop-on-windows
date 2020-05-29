@@ -50,7 +50,7 @@ Result
 
 Verify
 
-![HadoopJDK](images/HadoopJDK8-nospaces.PNG)
+![HadoopJDK](images/HadoopJDK8-nospaces.png)
 
 ---
 
