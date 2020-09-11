@@ -24,7 +24,7 @@ Close the window with ALT+SPACE C and reopen.
 ## Add winutil files
 
 - Go to [https://github.com/cdarlint/winutils](https://github.com/cdarlint/winutils).
-- Get winutils.exe and download the lastest to your C:\Hadoop\bin folder.
+- Get winutils.exe and download the lastest to your C:\Hadoop\hadoop-3.3.0\bin folder.
 
 
 ## Windows 2 - Edit Hadoop Files
