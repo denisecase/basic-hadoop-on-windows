@@ -10,96 +10,22 @@
 - Be able to stop a PowerShell process with CTRL+C
 - Be able to close PowerShell with ALT+SPACE C
 - Chocolatey, the Windows package manager
-- OpenJDK (install or upgrade to latest using Chocolatey)
-- Apache Maven, Java build tool (install or upgrade)
-- VS Code for editing configuration files (install or upgrade)
-- Optional: 7-zip for decompressing large files
-- Recommended: Do NOT use choco to install Hadoop - follow the instructions below instead.
 
 ```PowerShell
-choco install openjdk -y
-choco install maven -y
-choco install vscode -y
-choco install 7zip -y
+choco install hadoop -y
+refreshenv
 choco list -local
 ```
 
----
+Choco installs JDK 8 with no spaces for Hadoop. 
 
-## Hadoop Needs Java with No Spaces (and Yarn needs JDK 8)
+Close the window with ALT+SPACE C and reopen. 
 
-Choco installs OpenJDK to C:\Program Files\OpenJDK\jdk-14.0.1.
-
-- This works fine for most programs, but not Hadoop. 
-- Hadoop cannot have spaces in the path. 
-- Yarn cannot have a version greater than 8.
-- Keep Windows Environment Variables at the original Chocolatey path. (Windows 1 below.)
-- Use a special "no spaces in the path" JDK 8 version for Hadoop (set in hadoop-env.cmd in Windows 2 below.)
-
-An easy way to get this version:
-
-- Go to [https://adoptopenjdk.net/upstream.html](https://adoptopenjdk.net/upstream.html)
-- Download OpenJDK 8 (LTS) for Windows x64 JDK 103 MB as a zip file to C:\.
-- If not permitted to download to C:\, download to your "Downloads" folder and move to C:\ when done. 
-- Right-click / Extract all / Extract. 
-- Move the openjdk-8u252-b09 folder from C:\OpenJDK8U-jdk_x64_windows_8u252b09 to C:\.
-
-Result 
-
-- Now we have JDK 8 with no spaces available for Hadoop. 
-
-Verify
-
-![HadoopJDK](images/HadoopJDK8-nospaces.png)
-
----
-
-## Hadoop 1 - Get Hadoop
-
-- Go to <https://hadoop.apache.org/releases.html>.
-- Download most current binary to C:\
-
-In C:\, open PowerShell as Administrator and run:
-
-```PowerShell
-tar xzvf hadoop-3.2.1.tar.gz
-```
-
-This creates C:\hadoop-3.2.1. Explore the subdirectories. Find jars, webapps, and more.
-
-:confused: If PowerShell does not have the tar command yet, use Git Bash or 7-zip to uncompress. 
-
-## Hadoop 2 - Add winutil files
+## Add winutil files
 
 - Go to [https://github.com/cdarlint/winutils](https://github.com/cdarlint/winutils).
-- Find the version that matches your Hadoop (e.g. [hadoop-3.2.1/bin](https://github.com/cdarlint/winutils/tree/master/hadoop-3.2.1/bin))
-- Download each file to your C:\hadoop-3.2.1\bin folder, overwriting when necessary.
+- Get winutils.exe and download the lastest to your C:\Hadoop\bin folder.
 
-## Hadoop 3 - Update jar
-
-- Rename your C:\hadoop-3.2.1\share\hadoop\hdfs\hadoop-hdfs-3.2.1.jar to hadoop-hdfs-3.2.1.bk (5820 KB)
-- Save the [share-hadoop-hdfs/hadoop-hdfs-3.2.1.jar](./share-hadoop-hdfs/hadoop-hdfs-3.2.1.jar) in this repo (5780 KB) to your C:\hadoop-3.2.1\share\hadoop\hdfs\ folder.
-- Read more at <https://kontext.tech/column/hadoop/379/fix-for-hadoop-321-namenode-format-issue-on-windows-10>
-- Source: [https://github.com/FahaoTang/big-data/blob/master/hadoop-hdfs-3.2.1.jar](https://github.com/FahaoTang/big-data/blob/master/hadoop-hdfs-3.2.1.jar)
-
----
-
-## Windows 1 - Configure System Environment Variables
-
-Edit the system environment variables. All paths must reflect the installation location on your machine. These paths reflect the locations on my machine.
-
-- Open with Windows key + "Edit the system environment variables" / Environment variables / System variables (bottom half of the window).
-- Set HADOOP_HOME to C:\hadoop-3.2.1
-- Verify JAVA_HOME is C:\Program Files\OpenJDK\jdk-14.0.1 OR C:\Program Files\Java\jdk1.8.0_211 (or similar if you want JDK 8)
-- Verify M2_HOME C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3
-
-Edit Path - use Edit or New entry to add these locations to your path. Note the \bin at the end. Spelling and capitalization are critical.
-
-- Verify: C:\Program Files\OpenJDK\jdk-14.0.1\bin OR %JAVA_HOME%\bin (don't use both)
-- Verify: %M2_HOME%\bin
-- New: %HADOOP_HOME%\bin
-
-:confused:  A Path with multiple Java options can cause errors. I delete Oracle JDK and keep only the latest OpenJDK.
 
 ## Windows 2 - Edit Hadoop Files
 
