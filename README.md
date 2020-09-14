@@ -18,6 +18,8 @@ choco list -local
 ```
 Close the window with ALT+SPACE C and reopen. 
 
+## JDK 8 With No Spaces
+
 Choco installs JDK 8 with spaces. We need a path with no spaces for Hadoop. 
 
 - Hadoop cannot have spaces in the path.
@@ -37,13 +39,18 @@ Now we have JDK 8 with no spaces available for Hadoop.
 
 Verify you have C:\openjdk-8u252-b09 with the necessary files. 
 
+## Edit Windows System Environment Variables
+
+HADOOP_HOME = C:\Hadoop
+
+JAVA_HOME = location of your most current OpenJDK (this can have spaces)
+
+PATH = only one JDK in the path and %HADOOP_HOME%\hadoop-3.3.0\bin.
+
 ## Add winutil files
 
 - Go to [https://github.com/cdarlint/winutils](https://github.com/cdarlint/winutils).
 - Get winutils.exe and download the lastest to your C:\Hadoop\hadoop-3.3.0\bin folder.
-
-Possible: <https://github.com/kontext-tech/winutils/tree/master/hadoop-3.3.0/bin>
-
 
 ## Windows 2 - Edit Hadoop Files
 
