@@ -31,7 +31,7 @@ Possible: <https://github.com/kontext-tech/winutils/tree/master/hadoop-3.3.0/bin
 
 ## Windows 2 - Edit Hadoop Files
 
-Open C:\hadoop-3.2.1\etc\hadoop in VS Code to edit these files as shown in [./etc-hadoop](./etc-hadoop).
+Open C:\Hadoop\hadoop-3.3.0\etc\hadoop in VS Code to edit these files as shown in [./etc-hadoop](./etc-hadoop).
 
 - core-site.xml
 - hadoop-env.cmd (set JAVA_HOME=C:\openjdk-8u252-b09 - no spaces, must be version 8)
