@@ -16,10 +16,26 @@ choco install hadoop -y
 refreshenv
 choco list -local
 ```
-
-Choco installs JDK 8 with no spaces for Hadoop. 
-
 Close the window with ALT+SPACE C and reopen. 
+
+Choco installs JDK 8 with spaces. We need a path with no spaces for Hadoop. 
+
+- Hadoop cannot have spaces in the path.
+- Yarn cannot have a version greater than 8.
+- Keep Windows Environment Variables at the original Chocolatey path. (Windows 1 below.)
+- Use a special "no spaces in the path" JDK 8 version for Hadoop (set in hadoop-env.cmd below.)
+
+An easy way to get this version:
+
+- Go to https://adoptopenjdk.net/upstream.html
+- Download OpenJDK 8 (LTS) for Windows x64 JDK 103 MB as a zip file to C:.
+- If not permitted to download to C:, download to your "Downloads" folder and move to C:\ when done.
+- Right-click / Extract all / Extract.
+- Move the openjdk-8u252-b09 folder from C:\OpenJDK8U-jdk_x64_windows_8u252b09 to C:.
+
+Now we have JDK 8 with no spaces available for Hadoop.
+
+Verify you have C:\openjdk-8u252-b09 with the necessary files. 
 
 ## Add winutil files
 
