@@ -117,6 +117,7 @@ hadoop fs -put C:/romeoandjuliet.txt /wordcount
 hadoop fs -ls /
 hadoop fs -ls /wordcount
 hadoop fs -help
+hadoop fs -mkdir -p project1
 ```
 
 ## Start up YARN
