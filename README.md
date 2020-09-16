@@ -73,7 +73,7 @@ hdfs namenode -format
 
 Verify it runs without errors. The process will shutdown the new namenode after formatting. 
 
-Explore the new folder created at C:\hadoop-3.2.1\nodes\namenode (or the path given in hdfs-site.xml).
+Explore the new folder created at the path given in hdfs-site.xml.
 
 ---
 
