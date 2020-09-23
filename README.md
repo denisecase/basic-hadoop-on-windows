@@ -50,7 +50,7 @@ PATH = only one JDK in the path and %HADOOP_HOME%\hadoop-3.3.0\bin.
 ## Add winutil files
 
 - Go to [https://github.com/cdarlint/winutils](https://github.com/cdarlint/winutils).
-- Get winutils.exe and download the lastest to your C:\Hadoop\hadoop-3.3.0\bin folder.
+- Get winutils.exe and download the lastest to your C:\Hadoop\hadoop-3.3.0\bin folder. If you get ```java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z``` error then you may have to download hadoop.dll file as well to your bin folder.
 
 ## Windows 2 - Edit Hadoop Files
 
