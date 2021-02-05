@@ -44,7 +44,7 @@ Verify you have C:\openjdk-8u252-b09 (or similar) with the necessary files.
 
 ## Edit Windows System Environment Variables
 
-HADOOP_HOME = C:\Hadoop
+HADOOP_HOME = C:\Hadoop\hadoop-3.3.0
 
 JAVA_HOME = location of your most current OpenJDK (this can have spaces)
 
