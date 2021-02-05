@@ -48,7 +48,7 @@ HADOOP_HOME = C:\Hadoop\hadoop-3.3.0
 
 JAVA_HOME = location of your most current OpenJDK (this can have spaces)
 
-PATH = only one JDK in the path and %HADOOP_HOME%\hadoop-3.3.0\bin.
+PATH = only one JDK in the path and %HADOOP_HOME%\bin.
 
 ## Add winutil files
 
